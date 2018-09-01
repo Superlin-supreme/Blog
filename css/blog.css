@@ -1,0 +1,385 @@
+*{
+	padding: 0;
+	margin: 0;
+	/*font-family: Microsoft YaHei;*/
+	box-sizing: border-box;
+	text-decoration: none;
+
+	/*-webkit-transform: translate3d(0,0,0);
+		-moz-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		-o-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);*/
+}
+
+ul li{
+	list-style: none;
+	display: block;
+}
+
+button{
+	outline: none;
+	cursor: pointer;
+}
+
+.banner{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.banner_bg{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	overflow: hidden;
+}
+
+.banner_bg img{
+	width: 100%;
+	height: auto;
+	display: block;
+	position: absolute;
+}
+
+.banner_bg .mask{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	position: absolute;
+	z-index: 1;
+}
+
+.banner .name{
+	width: 250px;
+	position: absolute;
+	left: 20px;
+	top: 15px;
+	cursor: pointer;
+	transform: translateX(0);
+	transition: transform 1s;
+	z-index: 3;
+	animation: bounceInDown 1s ease;
+}
+
+@-webkit-keyframes bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.banner .name:hover{
+	transform: translateX(10px);
+}
+
+.banner .name span{
+	font-family: Segoe UI, Microsoft YaHei;
+	font-weight: bold;
+	font-size: 30px;
+	color: #ffffff;
+}
+
+.banner_hdl{
+	width: auto;
+	height: auto;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	font-size: 60px;
+	font-family: Microsoft MHei, Microsoft YaHei;
+	z-index: 3;
+	text-align: center;
+}
+
+.banner_hdl span{
+	display: block;
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.zoomIn {
+  -webkit-animation: zoomIn 1s ease;
+  animation: zoomIn 1s ease;
+}
+
+.Author_info{
+	width: 150px;
+	height: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 40px;
+	z-index: 3;
+}
+
+.Author_info img{
+	width: 60px;
+	height: 60px;
+	margin: 5px auto;
+	display: block;
+	border-radius: 40px;
+}
+
+.Author_info p{
+	font-family: Consolas, Microsoft YaHei;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+}
+
+.btn_list{
+	position: absolute;
+	top: 20px;
+	right: 20px;	
+	z-index: 3;
+	animation: bounceInDown 1s ease;
+}
+
+.btn_list button{
+	width: 60px;
+	height: 30px;
+	background: none;
+	color: #ffffff;
+	border: none;
+	font-size: 18px;
+	/*border-radius: 30px;*/
+	float: left;
+	transform: translateX(0);
+	transition: transform 1s;
+}
+
+.btn_list button:hover{
+	transform: translateX(10px);
+}
+
+.btn_list img{
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.content{
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding: 60px 0;
+}
+
+.content p,ul{
+	width: 700px;
+	height: auto;
+	font-family: Microsoft YaHei light;
+	font-size: 16px;
+	line-height: 1.9;
+	color: #000;
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: 30px auto;
+	text-indent: 32px;
+
+}
+
+.content>:first-child{
+	text-indent: 0;	
+}
+
+.first_word{
+	font-size: 100px;
+	/*font-weight: 400;*/
+	color: #C3BFBF;
+	line-height: 90px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+
+}
+
+.content .ctt_img{
+	width: 700px;
+	height: auto;
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: 30px auto;
+}
+
+.content .ctt_gif{
+	width: 400px;
+}
+
+.content .ctt_img img{
+	width: 100%;
+	height: auto;
+}
+
+.content ul{
+	text-indent: 0;
+
+}
+
+.content ul li{
+	margin:10px 0;
+}
+
+.content ul strong{
+	margin-right: 16px;
+}
+
+.content a{
+	color: #2f7bbd;
+}
+
+/*.content strong{
+	display: block;
+	text-align: center;
+}
+*/
+
+.content .psgbottom{
+	text-indent: 0;
+	font-style: italic !important;
+}
+.footer{
+	background: rgb(48,59,78);
+	width: 100%;
+	height: 300px;
+	position: relative;
+}
+
+.foot_list{
+	width: 1000px;
+	height: 200px;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.foot_list a{
+	font-family: Segoe UI,Microsoft YaHei;
+	text-decoration: none;
+	color: #FEF5FF;
+	margin-top: 10px;
+	display: block;
+}
+
+.foot_list a:hover{
+	color: #86898A;
+}
+
+.foot_list .link_style{
+	width: 250px;
+	height: 200px;
+	float: left;
+}
+
+.foot_list .link_list1 a{
+	font-weight: bold;
+}
+
+.foot_list > .link_list3,.link_list4{
+	padding-left: 10%;
+}
+

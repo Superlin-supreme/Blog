@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>superlin's Posts</title>
+	<link rel="stylesheet" type="text/css" href="css/blog.css">
+</head>
+<body>
+<div class="banner" id="bnr">
+	<div class="banner_bg">
+		<img src="img/twitter-design-system-hero.jpg">
+		<div class="mask"></div>
+	</div>
+	<div class="banner_hdl">
+		<span class="zoomIn">What is CSS?</span>
+	</div> 
+	<div class="Author_info zoomIn">
+		<img src="img/Author.jpg">
+		<p>by Superlin</p>
+		<p>on April 4,2018</p>
+	</div>
+	<div class="name"><span>Superlin's blog</span></div>
+	<div class="btn_list">
+		<button id="pop_btn_2">Menu</button>
+		<img src="img/menu_btn.png" id="pop_btn">
+	</div>	
+</div>
+<div class="content">
+	<p><span class="first_word">C</span>SS指的是层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。它主要是用于定义HTML内容在浏览器内的显示样式，如文字大小、颜色、字体加粗等。常常被称“网页美容师”。CSS具有以下特点：</p>
+	<p><strong>丰富的样式定义</strong></p>
+	<p>CSS可以将样式定义在HTML元素的style属性中，也可以将其定义在HTML文档的header部分，也可以将样式声明在一个专门的CSS文件中，以供HTML页面引用。总之，CSS样式表可以将所有的样式声明统一存放，进行统一管理。</p>
+	<p>另外，可以将相同样式的元素进行归类，使用同一个样式进行定义，也可以将某个样式应用到所有同名的HTML标签中，也可以将一个CSS样式指定到某个页面元素中。如果要修改样式，我们只需要在样式列表中找到相应的样式声明进行修改。</p>
+	<p><strong>易于使用和修改</strong></p>
+	<p>CSS提供了丰富的文档样式外观，以及设置文本和背景属性的能力；允许为任何元素创建边框，以及元素边框与其他元素间的距离，以及元素边框与元素内容间的距离；允许随意改变文本的大小写方式、修饰方式以及其他页面效果。
+	易于使用和修改</p>
+	<p><strong>多页面应用</strong></p>
+	<p>CSS样式表可以单独存放在一个CSS文件中，这样我们就可以在多个页面中使用同一个CSS样式表。CSS样式表理论上不属于任何页面文件，在任何页面文件中都可以将其引用。这样就可以实现多个页面风格的统一。
+	层叠</p>
+	<p><strong>层叠</strong></p>
+	<p>简单的说，层叠就是对一个元素多次设置同一个样式，这将使用最后一次设置的属性值。例如对一个站点中的多个页面使用了同一套CSS样式表，而某些页面中的某些元素想使用其他样式，就可以针对这些样式单独定义一个样式表应用到页面中。这些后来定义的样式将对前面的样式设置进行重写，在浏览器中看到的将是最后面设置的样式效果。</p>\
+	<div class="ctt_img"><img src="img/css.png"></div>
+	<p><strong>盒子模型</strong></p>
+	<p>盒子模型是CSS在应用中常用的模型，顾名思义，盒子就是用来装内容的，盒子可以是div、table、
+	form等块级元素，而内容可以是文字、图片或者是另一个盒子等等。盒子主要具备内容、填充、边框、边界等属性，可参考下图：</p>
+	<div class="ctt_img"><img src="img/css_box.jpg"></div>
+	<p><strong>网页布局模型</strong></p>
+	<p>相对而言，网页的布局模型是建立在盒子模型的基础之上，CSS中主要有三种布局模型：流动模型（Flow）、浮动模型 (Float)、层模型（Layer）。</p>
+	<ul>
+		<li><strong>流动模型</strong>流动是指网页默认的布局，即HTML元素的原始排列，主要有两个特征：一点是块级元素都会在所处的元素中自上而下垂直排布，因为块级元素的宽度默认为100%，故每一个块元素都会占用一行；另一点是内联元素都会在所处的包含元素内从左到右水平分布显示。</li>
+		<li><strong>浮动模型</strong>因为块元素的默认排列往往不利于元素的布局，所以可以通过控制浮动来控制元素的位置。</li>
+		<li><strong>层模型</strong>层模型就像是ps中的图层编辑功能一样，能对元素进行精准定位，定位的方法是用几个定位（position）属性来实现，它的值主要有三个绝对定位(absulute)、相对定位(relative)、固定定位(fixed)。</li>
+	</ul>
+	<p class="psgbottom">更多资料请参考<a href="http://www.w3school.com.cn/css/index.asp">www.w3school.com.cn/css/index.asp</a></p>
+	<div class="ctt_img ctt_gif"><img src="img/coder.gif"></div>
+</div>
+<div class="footer">
+	<div  class="foot_list">
+		<div class="link_style link_list1">
+			<a href="#">WHAT I DO</a>
+			<a href="#">WHAT I'VE DONE</a>
+			<a href="#">WHAT I KNOW</a>
+			<a href="#">WHO I ARE</a>
+		</div>
+		<div class="link_style link_list2">
+			<a href="#">CUSTOMER SUPPORT</a>
+			<a href="#">CUSTOMER MODERATION</a>
+			<a href="#">COMMUNITY MANAGEMENT</a>
+			<a href="#">SPECISL OPS</a>
+		</div>
+		<div class="link_style link_list3">
+			<a href="#">a link</a>
+			<a href="#">a link</a>
+			<a href="#">a link</a>
+		</div>
+		<div class="link_style link_list4">
+			<a href="#">a link</a>
+			<a href="#">a link</a>
+		</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="js/blog.js"></script>
+</html>
